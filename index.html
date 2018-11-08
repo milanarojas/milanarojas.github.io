@@ -2,9 +2,15 @@
   <head>
     <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
   </head>
-  <body>
+  <body> 
+
+  	<a-assets>
+     <a-asset-item id="ice-obj" src="/path/to/ice.obj"></a-asset-item> 
+     <a-asset-item id="ice-mtl" src="/path/to/ice.mtl"></a-asset-item> 
+</a-assets>
+
     <a-scene>
-      
+      <a-entity obj-model="obj: #ice-obj; mtl: #ice-mtl"></a-entity>
       <a-box position="0 1.25 -5" radius="1.25" color="pink"></a-box>
       
     </a-scene>
