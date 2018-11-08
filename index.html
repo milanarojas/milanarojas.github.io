@@ -1,18 +1,21 @@
-<html>
+  <html>
   <head>
     <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
   </head>
   <body> 
 
-  	<a-assets>
-     <a-asset-item id="ice-obj" src="/path/to/ice.obj"></a-asset-item> 
-     <a-asset-item id="ice-mtl" src="/path/to/ice.mtl"></a-asset-item> 
-</a-assets>
+ <a-scene>
+    <a-assets>
+     <a-asset-item id="Cell-obj" src=Cell.obj"></a-asset-item> 
+     <a-asset-item id="Cell-mtl" src="Cell.mtl"></a-asset-item> 
+    </a-assets>
 
-    <a-scene>
-      <a-entity obj-model="obj: #ice-obj; mtl: #ice-mtl"></a-entity>
-      <a-box position="0 1.25 -5" radius="1.25" color="pink"></a-box>
-      
+      <a-entity obj-model="obj: #Cell-obj; mtl: #Cell-mtl" scale="0.1 0.1 0.1" rotation="-90 0 0" position="5.9 3.5 4.3"></a-entity>
+
+      <a-sky color="#824DD9"></a-sky> 
+      <audio src="song.mp3" autoplay preload></audio>
+      <a-text value="Milana's World"></a-text>
     </a-scene>
   </body>
 </html>
+s
